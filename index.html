@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>music</title>
+        <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+    <body>
+        <div class="navbar">
+      <div class="header-menu-topleft">
+
+        <div class="header-menu-element">
+          <a href="index.html"><img src="files/icon.png" width="30"></a>
+        </div>
+      </div>
+      <div class="header-menu-topright">
+        <div class="header-menu-element">
+          <a href="#">Home</a>
+        </div>
+        <div class="header-menu-element">
+          <a href="albumlist.html">Album</a>
+          <a href="photo.html">Photo</a>
+          <a href="artistlist.html">Artist</a>
+          <a href="player.html">Player</a>
+        </div>
+        </div>
+    </div> 
+        <div class="block1">
+            <h1>Musical groups</h1>
+            
+            <hr size="4px"/>
+            <div>
+                <div class="line1">
+                    <div class="tile"> 
+                        <div class="texttile"><img src="files/icon5.png" ><br/>
+                        <p class="p1">Nightwish</p> 
+                        <p class="p2">финская метал-группа</p> </div></div>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%B8_%D0%A8%D1%83%D1%82"><div class="tile" id="imgtile1">
+                    	<ul id="slides">
+                      <li class="slide showing"></li>
+                      <li class="slide"></li>
+                      <li class="slide"></li>
+                      </ul>
+                    </div></a> 
+                    <div class="tile">
+                        <div class="texttile"><img src="files/icon3.png"><br/>
+                        <p class="p1">Ария</p> 
+                        <p class="p2">советская и российская хеви-метал-группа.</p> </div></div>
+                    <a href="https://ru.wikipedia.org/wiki/Lordi"><div class="tile" id="imgtile2"> 
+                    <ul id="slides4">
+                      <li class="slide4 showing4"></li>
+                      <li class="slide4"></li>
+                      <li class="slide4"></li>
+                      </ul>
+                  </div></a>
+                </div>
+                <div class="line2">
+                    <a href="https://ru.wikipedia.org/wiki/Nightwish"><div class="tile" id="imgtile3">
+					  <ul id="slides2">
+                      <li class="slide2 showing2"></li>
+                      <li class="slide2"></li>
+                      <li class="slide2"></li>
+                      </ul>
+                    </div></a>
+                    <div class="tile">
+                        <div class="texttile"><img src="files/icon4.png"><br/>
+                        <p class="p1">Король и Шут</p> 
+                        <p class="p2">российская хоррор-панк-группа из Санкт-Петербурга.</p> </div></div>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B8%D1%8F_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"><div class="tile" id="imgtile4"> 
+					  <ul id="slides3">
+                      <li class="slide3 showing3"></li>
+                      <li class="slide3"></li>
+                      <li class="slide3"></li>
+                      </ul>
+                    </div></a>
+                    <div class="tile"> 
+                        <div class="texttile"><img src="files/icon2.png"><br/>
+                        <p class="p1">Lordi</p> 
+                        <p class="p2">финская англоязычная хард-рок-группа.</p> </div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block2">
+            
+        </div>
+        <div class="block3">
+
+        </div>
+        <script type="text/javascript">
+
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,3000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+var slides2 = document.querySelectorAll('#slides2 .slide2');
+var currentSlide2 = 0;
+var slideInterval2 = setInterval(nextSlide2,3000);
+
+function nextSlide2(){
+    slides2[currentSlide2].className = 'slide2';
+    currentSlide2 = (currentSlide2+1)%slides2.length;
+    slides2[currentSlide2].className = 'slide2 showing2';
+}
+
+var slides3 = document.querySelectorAll('#slides3 .slide3');
+var currentSlide3 = 0;
+var slideInterval3 = setInterval(nextSlide3,3000);
+
+function nextSlide3(){
+    slides3[currentSlide3].className = 'slide3';
+    currentSlide3 = (currentSlide3+1)%slides3.length;
+    slides3[currentSlide3].className = 'slide3 showing3';
+}
+var slides4 = document.querySelectorAll('#slides4 .slide4');
+var currentSlide4 = 0;
+var slideInterval4 = setInterval(nextSlide4,3000);
+
+function nextSlide4(){
+    slides4[currentSlide4].className = 'slide4';
+    currentSlide4 = (currentSlide4+1)%slides4.length;
+    slides4[currentSlide4].className = 'slide4 showing4';
+}
+
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="player.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="header-menu-topleft">
+
+        <div class="header-menu-element">
+          <a href="index.html"><img src="files/icon.png" width="30"></a>
+        </div>
+      </div>
+      <div class="header-menu-topright">
+        <div class="header-menu-element">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="header-menu-element">
+          <a href="albumlist.html">Album</a>
+          <a href="photo.html">Photo</a>
+          <a href="artistlist.html">Artist</a>
+          <a href="player.html">Player</a>
+        </div>
+        </div>
+    </div> 
+    <img src="./assets/images/photo5.2.jpg" id="background" />
+    <audio src="./assets/music/nightwish.mp3" id="song"></audio>
+
+    <div class="container">  
+        <div class="box"></div>      
+        <img src="./assets/images/photo5.2.jpg" id="thumbnail" />
+        
+        <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
+        <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
+        <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
+
+        <div class="song-artist">Nightwish</div>
+        <div class="song-title">Nemo</div>
+
+        <!-- Input element for progress bar - min=0 starting value of every song - max length will change per song so leave empty -->
+        
+        <input 
+            type="range" 
+            id="progress-bar" 
+            min="0" 
+            max="" 
+            value="0" 
+            onchange="changeProgressBar()"
+        />
+
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
